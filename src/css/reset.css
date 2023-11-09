@@ -151,11 +151,7 @@ input:focus {
   border: none;
 }
 
-div {
-  background: yellow;
-}
-
 button {
   cursor: pointer;
   padding: 0;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=reset.css.map */
