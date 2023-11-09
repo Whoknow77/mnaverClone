@@ -151,10 +151,6 @@ input:focus {
   border: none;
 }
 
-div {
-  background: yellow;
-}
-
 button {
   cursor: pointer;
   padding: 0;

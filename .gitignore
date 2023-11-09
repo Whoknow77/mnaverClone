@@ -1,2 +1,6 @@
 ## file
 *.map
+**/webpack.config.js
+**/bundle.js
+**/dist
+**/build
