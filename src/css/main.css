@@ -262,6 +262,9 @@ body {
 .menu__item {
   flex: 0 0 20%;
 }
+.menu__item--etc {
+  margin-bottom: 10px;
+}
 .menu__list {
   display: flex;
   flex-wrap: wrap;

@@ -103,6 +103,9 @@
 	max-width: 352px;
 	&__item {
 		flex: 0 0 20%;
+		&--etc {
+			margin-bottom: 10px;
+		}
 	}
 	&__list {
 		display: flex;
