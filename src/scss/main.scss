@@ -10,12 +10,12 @@
 	&__left-menu {
 		display: flex;
 		align-items: center;
-		gap: 8px;
+		gap: 5px;
 	}
 	&__right-menu {
 		display: flex;
 		align-items: center;
-		gap: 8px;
+		gap: 5px;
 	}
 
 	&__item {
@@ -51,24 +51,29 @@
 .search {
 	display: flex;
 	justify-content: center;
+	margin-top: 65px;
+	padding: 0 20px;
+	&__inner {
+		width: 100%;
+		max-width: 500px;
+	}
 
 	&__bar {
-		padding: 10px 18px;
-		width: 470px;
+		padding: 0 18px;
 		height: 50px;
 		border: 1px solid green;
 		background: white;
 		border-radius: 50px;
 		display: flex;
 		align-items: center;
-	}
-	.bar__item {
-		width: 27px;
-		height: 27px;
-		background-size: 434px 414px;
-		background-image: url(../img/desktopsprite.png);
-		background-repeat: no-repeat;
-		display: block;
+		&-item {
+			width: 27px;
+			height: 27px;
+			background-size: 434px 414px;
+			background-image: url(../img/desktopsprite.png);
+			background-repeat: no-repeat;
+			display: block;
+		}
 	}
 	.item__link {
 		width: 100%;
@@ -80,6 +85,7 @@
 		height: 100%;
 		width: 100%;
 		opacity: 0.5;
+		font-size: 17px;
 	}
 	.logo {
 		background-position: -126px -355px;
@@ -87,5 +93,39 @@
 
 	.voice {
 		background-position: -296px -329px;
+	}
+}
+
+.menu {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 30px;
+	max-width: 352px;
+	&__item {
+		flex: 0 0 20%;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+
+		.item__img {
+			width: 44px;
+			height: 44px;
+		}
+
+		.item__text {
+			font-size: 11px;
+			line-height: 15px;
+			color: black;
+		}
+		.item__link {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 3px;
+		}
 	}
 }
