@@ -1,1 +1,49 @@
 @import "./reset.scss";
+
+.header {
+	padding: 10px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left-menu {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+	&__right-menu {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__item {
+		width: 40px;
+		height: 40px;
+		background-size: 323px 273px;
+		background-image: url(../img/headerbackground.png);
+		background-repeat: no-repeat;
+		display: block;
+	}
+	.item__link {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.hamburger {
+		background-position: -49px -145px;
+	}
+	.naverpay {
+		background-position: -90px -192px;
+	}
+	.chat {
+		background-position: -135px -194px;
+	}
+	.alarm {
+		background-position: -45px -194px;
+	}
+	.mypage {
+		background-position: -212px -80px;
+	}
+}
