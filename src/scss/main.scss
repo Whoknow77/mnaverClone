@@ -229,7 +229,46 @@
 				height: 158px;
 			}
 			&--2 {
-				height: 176px;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				.ai {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					&__left {
+						display: flex;
+						gap: 10px;
+						.logo {
+							background-size: 408px 372px;
+							background-position: -214px -92px;
+							width: 40px;
+							height: 40px;
+							background-image: url(../img/etcsprite.png);
+							background-repeat: no-repeat;
+							display: block;
+						}
+						&__explain {
+						}
+						.explain__text {
+							&--emphasis {
+								font-weight: 700;
+							}
+							&--emphasis2 {
+								color: #767678;
+							}
+						}
+					}
+					&__right {
+					}
+					&__use {
+						font-weight: 400;
+						line-height: 18px;
+						color: #03c95b;
+						white-space: nowrap;
+					}
+				}
 			}
 			&--3 {
 				background: yellow;

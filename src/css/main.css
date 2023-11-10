@@ -382,7 +382,40 @@ body {
   color: gray;
 }
 .main .card__item--2 {
-  height: 176px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.main .card__item--2 .ai {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .card__item--2 .ai__left {
+  display: flex;
+  gap: 10px;
+}
+.main .card__item--2 .ai__left .logo {
+  background-size: 408px 372px;
+  background-position: -214px -92px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/etcsprite.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.main .card__item--2 .ai__left .explain__text--emphasis {
+  font-weight: 700;
+}
+.main .card__item--2 .ai__left .explain__text--emphasis2 {
+  color: #767678;
+}
+.main .card__item--2 .ai__use {
+  font-weight: 400;
+  line-height: 18px;
+  color: #03c95b;
+  white-space: nowrap;
 }
 .main .card__item--3 {
   background: yellow;
