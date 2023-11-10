@@ -286,4 +286,133 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 3px;
+}
+
+.main {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+}
+.main__container {
+  width: 100%;
+  --gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  grid-auto-rows: 10px;
+}
+@media screen and (max-width: 1150px) {
+  .main__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__container {
+    display: block;
+  }
+  .main__container {
+    margin-bottom: var(--gap);
+  }
+}
+.main .card__item {
+  background: white;
+  border-radius: 10px;
+}
+.main .card__item--1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 158px;
+}
+.main .card__item--1 .weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .card__item--1 .weather__left {
+  display: flex;
+  gap: 15px;
+}
+.main .card__item--1 .weather__right {
+  display: flex;
+  gap: 5px;
+}
+.main .card__item--1 .weather__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .card__item--1 .weather__img {
+  width: 42px;
+  height: 41px;
+  background-size: 484px 459px;
+  background-image: url(../img/weathersprite.png);
+  background-position: -267px -46px;
+  background-repeat: no-repeat;
+}
+.main .card__item--1 .weather__myplace {
+  font-size: 16px;
+  color: gray;
+}
+.main .card__item--1 .weather__myplace-button {
+  width: 16px;
+  height: 16px;
+  background-size: 408px 372px;
+  background-image: url(../img/etcsprite.png);
+  background-position: -390px -207px;
+  background-repeat: no-repeat;
+}
+.main .card__item--1 .weather__place {
+  font-weight: 700;
+  font-size: 18px;
+}
+.main .card__item--1 .weather__detail {
+  font-size: 15px;
+}
+.main .card__item--1 .weather__detail--good {
+  color: blue;
+}
+.main .card__item--1 .weather__find-place {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+}
+.main .card__item--2 {
+  height: 176px;
+}
+.main .card__item--3 {
+  background: yellow;
+  height: 374px;
+}
+.main .card__item--4 {
+  background: green;
+  height: 530px;
+}
+.main .card__item--5 {
+  background: skyblue;
+  height: 225px;
+}
+.main .card__item--6 {
+  background: yellowgreen;
+  height: 240px;
+}
+.main .card__item--7 {
+  background: pink;
+  height: 300px;
+}
+.main .card__item--8 {
+  background: violet;
+  height: 300px;
+}
+.main .card__item--9 {
+  background: black;
+  height: 240px;
+}
+.main .card__item--10 {
+  background: orange;
+  height: 240px;
 }/*# sourceMappingURL=main.css.map */

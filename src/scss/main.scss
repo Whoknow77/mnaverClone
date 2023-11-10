@@ -132,3 +132,137 @@
 		}
 	}
 }
+
+.main {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 180px;
+	display: flex;
+	justify-content: center;
+	&__container {
+		width: 100%;
+		--gap: 10px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: var(--gap);
+		grid-auto-rows: 10px;
+	}
+
+	@media screen and (max-width: 1150px) {
+		&__container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		&__container {
+			display: block;
+		}
+
+		&__container {
+			margin-bottom: var(--gap);
+		}
+	}
+
+	.card {
+		&__item {
+			background: white;
+			border-radius: 10px;
+			&--1 {
+				.weather {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					&__left {
+						display: flex;
+						gap: 15px;
+					}
+					&__right {
+						display: flex;
+						gap: 5px;
+					}
+					&__container {
+						display: flex;
+						flex-direction: column;
+						gap: 5px;
+					}
+					&__img {
+						width: 42px;
+						height: 41px;
+						background-size: 484px 459px;
+						background-image: url(../img/weathersprite.png);
+						background-position: -267px -46px;
+						background-repeat: no-repeat;
+					}
+					&__myplace {
+						font-size: 16px;
+						color: gray;
+						&-button {
+							width: 16px;
+							height: 16px;
+							background-size: 408px 372px;
+							background-image: url(../img/etcsprite.png);
+							background-position: -390px -207px;
+							background-repeat: no-repeat;
+						}
+					}
+					&__place {
+						font-weight: 700;
+						font-size: 18px;
+					}
+					&__detail {
+						font-size: 15px;
+						&--good {
+							color: blue;
+						}
+					}
+					&__find-place {
+						text-align: center;
+						font-size: 13px;
+						color: gray;
+					}
+				}
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				height: 158px;
+			}
+			&--2 {
+				height: 176px;
+			}
+			&--3 {
+				background: yellow;
+				height: 374px;
+			}
+			&--4 {
+				background: green;
+				height: 530px;
+			}
+			&--5 {
+				background: skyblue;
+				height: 225px;
+			}
+			&--6 {
+				background: yellowgreen;
+				height: 240px;
+			}
+			&--7 {
+				background: pink;
+				height: 300px;
+			}
+			&--8 {
+				background: violet;
+				height: 300px;
+			}
+			&--9 {
+				background: black;
+				height: 240px;
+			}
+			&--10 {
+				background: orange;
+				height: 240px;
+			}
+		}
+	}
+}
