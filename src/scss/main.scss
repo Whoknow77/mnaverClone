@@ -22,7 +22,7 @@
 		width: 40px;
 		height: 40px;
 		background-size: 323px 273px;
-		background-image: url(../img/headerbackground.png);
+		background-image: url(../img/headersprite.png);
 		background-repeat: no-repeat;
 		display: block;
 	}
@@ -45,5 +45,47 @@
 	}
 	.mypage {
 		background-position: -212px -80px;
+	}
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+
+	&__bar {
+		padding: 10px 18px;
+		width: 470px;
+		height: 50px;
+		border: 1px solid green;
+		background: white;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+	}
+	.bar__item {
+		width: 27px;
+		height: 27px;
+		background-size: 434px 414px;
+		background-image: url(../img/desktopsprite.png);
+		background-repeat: no-repeat;
+		display: block;
+	}
+	.item__link {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	&__input {
+		padding: 0 15px;
+		height: 100%;
+		width: 100%;
+		opacity: 0.5;
+	}
+	.logo {
+		background-position: -126px -355px;
+	}
+
+	.voice {
+		background-position: -296px -329px;
 	}
 }

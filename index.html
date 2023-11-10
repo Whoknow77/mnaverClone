@@ -10,30 +10,67 @@
 		<header class="header">
 			<div class="header__inner">
 				<ul class="header__left-menu">
-					<button class="header__item hamburger">
+					<li class="header__item hamburger">
 						<a href="https://m.naver.com/aside/" class="item__link"></a>
-					</button>
-					<button class="header__item naverpay">
+					</li>
+					<li class="header__item naverpay">
 						<a
 							href="https://new-m.pay.naver.com/mydata/home?from=main_pay_icon"
 							class="item__link"
 						></a>
-					</button>
+					</li>
 				</ul>
 				<ul class="header__right-menu">
-					<button class="header__item chat">
+					<li class="header__item chat">
 						<a href="https://talks.naver.com/" class="item__link"></a>
-					</button>
-					<button class="header__item alarm">
+					</li>
+					<li class="header__item alarm">
 						<a href="https://m.notify.naver.com/" class="item__link"></a>
-					</button>
-					<button class="header__item mypage">
+					</li>
+					<li class="header__item mypage">
 						<a href="https://m.naver.com/na/" class="item__link"></a>
-					</button>
+					</li>
 				</ul>
 			</div>
 		</header>
-		<main class="main"></main>
+		<section class="search">
+			<div class="search__inner">
+				<div class="search__bar">
+					<div class="bar__item logo">
+						<a href="/" class="item__link"></a>
+					</div>
+					<input class="search__input" placeholder="검색어를 입력해주세요" />
+					<div class="bar__item voice">
+						<a href="/" class="item__link"></a>
+					</div>
+				</div>
+				<ul class="search__menu">
+					<li class="menu__item">
+						<a href="" class="item__link"></a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="item__link"></a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="item__link"></a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="item__link"></a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="item__link"></a>
+					</li>
+					<li class="menu__item">
+						<a href="" class="item__link"></a>
+					</li>
+					<li class="menu__item etc"></li>
+				</ul>
+			</div>
+		</section>
+
+		<article class="main"></article>
 		<footer class="footer"></footer>
 	</body>
 </html>
+
+<!--  헤더 메뉴에 button태그 시멘틱 요소를 넣지 않은점.. li 태그안에 a태그가 있는 방향이 맞는지, a태그에 크기 지정해주고 block해야함 -->
