@@ -8,6 +8,7 @@
 	display: flex;
 	justify-content: center;
 	&__container {
+		margin: 0 auto;
 		width: 100%;
 		--gap: 20px;
 		display: grid;
@@ -18,17 +19,25 @@
 
 	@media screen and (max-width: 1150px) {
 		&__container {
+			margin: 0 30px;
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		&__container {
+			margin: 0 30px;
 			display: block;
-		}
-
-		&__container {
-			margin-bottom: var(--gap);
+			.card {
+				margin-bottom: var(--gap);
+				&__item--4,
+				&__item--5,
+				&__item--6,
+				&__item--7,
+				&__item--8 {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -38,6 +47,7 @@
 			border-radius: 10px;
 			border: 1px solid rgba(204, 204, 204, 0.5);
 			&--1 {
+				height: 158px;
 				padding: 20px;
 				.weather {
 					display: flex;
@@ -98,7 +108,6 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
-				height: 158px;
 			}
 			&--2 {
 				height: 100px;
@@ -150,13 +159,12 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-
-					padding: 0 20px;
+					gap: 15px;
+					padding: 20px;
 					&__index-menu {
 						display: flex;
 						justify-content: space-around;
 						gap: 10px;
-						padding: 20px 2px 16px 0;
 					}
 					&__index-list {
 						overflow: hidden;
@@ -193,11 +201,10 @@
 					&__list {
 						font-size: 13px;
 						color: #767678;
-						border-right: 1px solid gray;
+						padding-right: 10px;
+						border-right: 1px solid rgba(204, 204, 204, 0.5);
 					}
 				}
-
-				height: 158px;
 			}
 			&--4 {
 				.advertise {
@@ -233,7 +240,6 @@
 						color: #767678;
 					}
 				}
-				height: 225px;
 			}
 			&--5 {
 				.advertise {
@@ -269,7 +275,6 @@
 						color: #767678;
 					}
 				}
-				height: 225px;
 			}
 			&--6 {
 				.advertise {
@@ -305,7 +310,6 @@
 						color: #767678;
 					}
 				}
-				height: 225px;
 			}
 			&--7 {
 				.advertise {
@@ -344,18 +348,13 @@
 						color: #767678;
 					}
 				}
-				height: 225px;
 			}
 			&--8 {
 				.advertise {
 					display: flex;
 					justify-content: flex-end;
 					align-items: center;
-					&__img {
-						height: 90px;
-					}
 				}
-				height: 80px;
 			}
 			&--9 {
 				height: 358x;
@@ -427,7 +426,120 @@
 				}
 			}
 			&--10 {
-				height: 240px;
+				padding: 20px;
+				.shopping {
+					&__title {
+						display: flex;
+						justify-content: space-between;
+
+						&-text {
+							font-size: 14px;
+							color: #767678;
+							font-weight: 400;
+						}
+						&-list {
+							display: flex;
+							gap: 5px;
+						}
+					}
+					&__logo1 {
+						width: 29px;
+						height: 18px;
+						@include spriteimg(
+							$url: "../img/etcsprite.png",
+							$position: -201px -322px,
+							$size: 408px 372px
+						);
+					}
+					&__logo2 {
+						width: 33px;
+						height: 22px;
+						@include spriteimg(
+							$url: "../img/etcsprite.png",
+							$position: -349px -204px,
+							$size: 408px 372px
+						);
+					}
+					&__pairing {
+						font-size: 14px;
+						line-height: 21px;
+						color: #767678;
+						font-weight: 400;
+						width: 16px;
+						height: 16px;
+						padding-right: 5px;
+						@include spriteimg(
+							$url: "../img/etcsprite.png",
+							$position: -390px -186px,
+							$size: 408px 372px
+						);
+					}
+					&__mid {
+						display: flex;
+						flex-direction: column;
+						padding-top: 20px;
+						gap: 15px;
+					}
+					&__list {
+						&-imgbox {
+							position: relative;
+						}
+						&-img {
+							height: 85px;
+							max-width: 100px;
+							border-radius: 10px;
+						}
+						.logo-text {
+							position: absolute;
+							top: 5px;
+							left: 5px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							background-color: rgba(0, 0, 0, 0.4);
+							border-radius: 8px;
+							padding: 2px 5px 0 3px;
+							font-size: 10px;
+							color: #fff;
+							font-weight: 400;
+							letter-spacing: -0.5px;
+						}
+						&-content {
+							display: flex;
+							flex-direction: column;
+							gap: 10px;
+						}
+						&-text {
+							display: -webkit-box;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							-webkit-line-clamp: 2;
+							-webkit-box-orient: vertical;
+							color: #424242;
+						}
+						&-text1 {
+							font-size: 15px;
+						}
+						&-text2 {
+							font-size: 13px;
+							font-weight: 400;
+						}
+						&-title {
+							display: flex;
+							gap: 3px;
+						}
+
+						&-logo {
+							width: 16px;
+							height: 16px;
+						}
+					}
+					&__link {
+						display: flex;
+						gap: 10px;
+						align-items: center;
+					}
+				}
 			}
 		}
 	}
