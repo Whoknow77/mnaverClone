@@ -1,0 +1,62 @@
+@import "./_mixins.scss";
+
+.header {
+	padding: 10px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left-menu {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	&__right-menu {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	&__item {
+		.link {
+			width: 40px;
+			height: 40px;
+			&.hamburger {
+				@include spriteimg(
+					$url: "../img/headersprite.png",
+					$size: 323px 273px,
+					$position: -49px -145px
+				);
+			}
+			&.naverpay {
+				@include spriteimg(
+					$url: "../img/headersprite.png",
+					$size: 323px 273px,
+					$position: -90px -192px
+				);
+			}
+			&.chat {
+				@include spriteimg(
+					$url: "../img/headersprite.png",
+					$size: 323px 273px,
+					$position: -135px -194px
+				);
+			}
+			&.alarm {
+				@include spriteimg(
+					$url: "../img/headersprite.png",
+					$size: 323px 273px,
+					$position: -45px -194px
+				);
+			}
+			&.mypage {
+				@include spriteimg(
+					$url: "../img/headersprite.png",
+					$size: 323px 273px,
+					$position: -212px -80px
+				);
+			}
+		}
+	}
+}

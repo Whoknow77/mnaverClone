@@ -1,6 +1,6 @@
 function masonryLayout() {
 	const masonryContainerStyle = getComputedStyle(
-		document.querySelector(".main .main__container")
+		document.querySelector(".content .content__container")
 	);
 	const columnGap = parseInt(
 		masonryContainerStyle.getPropertyValue("column-gap")
@@ -9,13 +9,15 @@ function masonryLayout() {
 		masonryContainerStyle.getPropertyValue("grid-auto-rows")
 	);
 
-	document.querySelectorAll(".main .main__container .card").forEach((elt) => {
-		console.log(elt);
-		elt.style.gridRowEnd = `span ${Math.ceil(
-			elt.querySelector(".card__item").scrollHeight / autoRows +
-				columnGap / autoRows
-		)}`;
-	});
+	document
+		.querySelectorAll(".content .content__container .card")
+		.forEach((elt) => {
+			console.log(elt);
+			elt.style.gridRowEnd = `span ${Math.ceil(
+				elt.querySelector(".card__item").scrollHeight / autoRows +
+					columnGap / autoRows
+			)}`;
+		});
 }
 
 masonryLayout();

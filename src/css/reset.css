@@ -159,4 +159,8 @@ button {
 
 body {
   background: #f4f6f8;
+}
+
+img {
+  max-width: 100%;
 }/*# sourceMappingURL=reset.css.map */

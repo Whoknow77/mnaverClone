@@ -1,0 +1,9 @@
+@mixin spriteimg($position, $size, $url) {
+	display: block;
+	background-repeat: no-repeat;
+	background-size: $size;
+	background-image: url($url);
+	background-position: $position;
+	margin: 0;
+	padding: 0;
+}
