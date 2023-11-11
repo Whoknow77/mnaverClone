@@ -9,6 +9,7 @@
 	justify-content: center;
 	&__container {
 		margin: 0 auto;
+		margin-bottom: 50px;
 		width: 100%;
 		--gap: 20px;
 		display: grid;
@@ -24,7 +25,7 @@
 		}
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 650px) {
 		&__container {
 			margin: 0 30px;
 			display: block;
@@ -46,6 +47,7 @@
 			background: white;
 			border-radius: 10px;
 			border: 1px solid rgba(204, 204, 204, 0.5);
+
 			&--1 {
 				height: 158px;
 				padding: 20px;
@@ -78,6 +80,11 @@
 					&__myplace {
 						font-size: 14px;
 						color: gray;
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
 						&-button {
 							width: 16px;
 							height: 16px;
@@ -89,10 +96,20 @@
 						}
 					}
 					&__place {
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
 						font-weight: 700;
 						font-size: 18px;
 					}
 					&__detail {
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
 						font-size: 15px;
 						&--good {
 							color: blue;
@@ -117,8 +134,29 @@
 				.ai {
 					width: 100%;
 					display: flex;
-					justify-content: space-between;
 					align-items: center;
+					overflow: hidden;
+					justify-content: space-between;
+					&__explain {
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+						&-text {
+							display: -webkit-box;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							-webkit-line-clamp: 2;
+							-webkit-box-orient: vertical;
+							&--emphasis {
+								font-weight: 700;
+							}
+							&--emphasis2 {
+								color: #767678;
+							}
+						}
+					}
 					&__left {
 						display: flex;
 						gap: 10px;
@@ -130,16 +168,6 @@
 								$position: -214px -92px,
 								$size: 408px 372px
 							);
-						}
-						.explain {
-							&__text {
-								&--emphasis {
-									font-weight: 700;
-								}
-								&--emphasis2 {
-									color: #767678;
-								}
-							}
 						}
 					}
 					&__use {
@@ -175,6 +203,11 @@
 						border-right: 1px solid rgba(204, 204, 204, 0.5);
 					}
 					&__name {
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
 						font-size: 13px;
 					}
 
@@ -224,9 +257,6 @@
 						}
 					}
 					&__text {
-						overflow: hidden;
-						text-overflow: ellipsis;
-						white-space: nowrap;
 						font-size: 16px;
 						font-weight: 400;
 					}
@@ -399,6 +429,11 @@
 					}
 					&__text {
 						font-weight: 900;
+						display: -webkit-box;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
 						&--left {
 							color: #767678;
 							text-align: left;
@@ -510,17 +545,18 @@
 							gap: 10px;
 						}
 						&-text {
-							display: -webkit-box;
 							overflow: hidden;
 							text-overflow: ellipsis;
-							-webkit-line-clamp: 2;
-							-webkit-box-orient: vertical;
 							color: #424242;
 						}
 						&-text1 {
+							display: -webkit-box;
+							-webkit-line-clamp: 2;
+							-webkit-box-orient: vertical;
 							font-size: 15px;
 						}
 						&-text2 {
+							white-space: nowrap;
 							font-size: 13px;
 							font-weight: 400;
 						}

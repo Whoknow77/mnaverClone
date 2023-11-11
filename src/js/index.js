@@ -12,7 +12,6 @@ function masonryLayout() {
 	document
 		.querySelectorAll(".content .content__container .card")
 		.forEach((elt) => {
-			console.log(elt);
 			elt.style.gridRowEnd = `span ${Math.ceil(
 				elt.querySelector(".card__item").scrollHeight / autoRows +
 					columnGap / autoRows
@@ -22,3 +21,4 @@ function masonryLayout() {
 
 masonryLayout();
 window.addEventListener("resize", masonryLayout);
+window.addEventListener("load", masonryLayout);

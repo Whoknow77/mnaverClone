@@ -327,6 +327,7 @@ img {
 }
 .content__container {
   margin: 0 auto;
+  margin-bottom: 50px;
   width: 100%;
   --gap: 20px;
   display: grid;
@@ -341,7 +342,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .content__container {
     margin: 0 30px;
     display: block;
@@ -397,6 +398,11 @@ img {
 .content .card__item--1 .weather__myplace {
   font-size: 14px;
   color: gray;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .content .card__item--1 .weather__myplace-button {
   width: 16px;
@@ -410,10 +416,20 @@ img {
   padding: 0;
 }
 .content .card__item--1 .weather__place {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-weight: 700;
   font-size: 18px;
 }
 .content .card__item--1 .weather__detail {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-size: 15px;
 }
 .content .card__item--1 .weather__detail--good {
@@ -434,8 +450,29 @@ img {
 .content .card__item--2 .ai {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.content .card__item--2 .ai__explain {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content .card__item--2 .ai__explain-text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content .card__item--2 .ai__explain-text--emphasis {
+  font-weight: 700;
+}
+.content .card__item--2 .ai__explain-text--emphasis2 {
+  color: #767678;
 }
 .content .card__item--2 .ai__left {
   display: flex;
@@ -451,12 +488,6 @@ img {
   background-position: -214px -92px;
   margin: 0;
   padding: 0;
-}
-.content .card__item--2 .ai__left .explain__text--emphasis {
-  font-weight: 700;
-}
-.content .card__item--2 .ai__left .explain__text--emphasis2 {
-  color: #767678;
 }
 .content .card__item--2 .ai__use {
   font-weight: 400;
@@ -490,6 +521,11 @@ img {
   border-right: 1px solid rgba(204, 204, 204, 0.5);
 }
 .content .card__item--3 .stock__name {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-size: 13px;
 }
 .content .card__item--3 .stock__price {
@@ -532,9 +568,6 @@ img {
   height: 48px;
 }
 .content .card__item--4 .advertise__text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-size: 16px;
   font-weight: 400;
 }
@@ -697,6 +730,11 @@ img {
 }
 .content .card__item--9 .advertise__text {
   font-weight: 900;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .content .card__item--9 .advertise__text--left {
   color: #767678;
@@ -809,17 +847,18 @@ img {
   gap: 10px;
 }
 .content .card__item--10 .shopping__list-text {
-  display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   color: #424242;
 }
 .content .card__item--10 .shopping__list-text1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   font-size: 15px;
 }
 .content .card__item--10 .shopping__list-text2 {
+  white-space: nowrap;
   font-size: 13px;
   font-weight: 400;
 }
