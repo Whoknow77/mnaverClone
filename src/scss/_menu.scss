@@ -15,22 +15,21 @@
 		align-items: center;
 		justify-content: center;
 		gap: 10px;
+	}
+	&__img {
+		width: 44px;
+		height: 44px;
+	}
 
-		.item__img {
-			width: 44px;
-			height: 44px;
-		}
-
-		.item__text {
-			font-size: 11px;
-			line-height: 15px;
-			color: black;
-		}
-		.item__link {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 3px;
-		}
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3px;
+	}
+	&__text {
+		font-size: 11px;
+		line-height: 15px;
+		color: black;
 	}
 }

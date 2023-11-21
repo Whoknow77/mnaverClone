@@ -3,14 +3,10 @@
 .search {
 	display: flex;
 	justify-content: center;
-	padding: 0 20px;
-	margin-top: 65px;
+	margin: 65px 20px 0 20px;
 	&__inner {
 		width: 100%;
 		max-width: 500px;
-	}
-
-	&__bar {
 		padding: 0 18px;
 		height: 50px;
 		border: 1px solid green;
@@ -18,26 +14,23 @@
 		border-radius: 50px;
 		display: flex;
 		align-items: center;
-		&-item {
-			.link {
-				width: 27px;
-				height: 27px;
-
-				&.logo {
-					@include spriteimg(
-						$url: "../img/desktopsprite.png",
-						$position: -123px -355px,
-						$size: 434px 414px
-					);
-				}
-				&.search {
-					@include spriteimg(
-						$url: "../img/desktopsprite.png",
-						$position: -296px -329px,
-						$size: 438px 414px
-					);
-				}
-			}
+	}
+	&__link {
+		width: 27px;
+		height: 27px;
+		&.logo {
+			@include spriteimg(
+				$url: "../img/desktopsprite.png",
+				$position: -123px -355px,
+				$size: 434px 414px
+			);
+		}
+		&.search {
+			@include spriteimg(
+				$url: "../img/desktopsprite.png",
+				$position: -296px -329px,
+				$size: 438px 414px
+			);
 		}
 	}
 	&__input {
