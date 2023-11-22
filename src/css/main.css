@@ -176,14 +176,13 @@ img {
 }
 .content__card {
   margin: 0 auto;
-  margin-bottom: 50px;
   width: 100%;
   --gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: var(--gap);
        column-gap: var(--gap);
-  grid-auto-rows: 20px;
+  grid-auto-rows: 25px;
 }
 @media screen and (max-width: 1150px) {
   .content__card {
@@ -207,12 +206,10 @@ img {
   margin-bottom: var(--gap);
 }
 .content .weather {
-  height: 158px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  align-items: flex-start;
-  justify-content: space-around;
+  gap: 20px;
 }
 .content .weather__top {
   width: 100%;
